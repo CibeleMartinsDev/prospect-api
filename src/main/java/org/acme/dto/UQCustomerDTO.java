@@ -8,7 +8,6 @@ public class UQCustomerDTO {
 
     private String websiteUrl;
 
-    private List<UQWebSitePageDTO> websitePages;
 
     public String getName() {
         return name;
@@ -26,11 +25,4 @@ public class UQCustomerDTO {
         this.websiteUrl = websiteUrl;
     }
 
-    public List<UQWebSitePageDTO> getWebsitePages() {
-        return websitePages;
-    }
-
-    public void setWebsitePages(List<UQWebSitePageDTO> websitePages) {
-        this.websitePages = websitePages;
-    }
 }
