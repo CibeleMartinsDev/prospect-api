@@ -26,6 +26,11 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <dependency>
+                <groupId>org.objectweb.asm</groupId>
+                <artifactId>asm</artifactId>
+                <version>9.7.1</version> <!-- Defina a versão desejada -->
+            </dependency>
         </dependencies>
     </dependencyManagement>
     <dependencies>
@@ -34,7 +39,6 @@
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-rest-client</artifactId>
         </dependency>
-
 
         <dependency>
             <groupId>io.quarkus</groupId>
@@ -71,7 +75,16 @@
             <artifactId>rest-assured</artifactId>
             <scope>test</scope>
         </dependency>
+<!--JSOUP-->
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>1.19.1</version>
+        </dependency>
+
+
     </dependencies>
+
 
     <build>
         <plugins>
