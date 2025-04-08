@@ -61,7 +61,9 @@ public class ProspectService {
             List<UQCustomerDTO> placesConvertedUqs = UQCustomerMapper.from(placesMapped);
             //Adiciona na lista de UQs, somente empresas que ainda não existem na base do CRM
             for(UQCustomerDTO uq : placesConvertedUqs) {
-                addUqsNotExistsCrm(uqs,uq, uqsInCrmMapped);
+                if(!uq.getWebsiteUrl().isEmpty()){
+                    addUqsNotExistsCrm(uqs,uq, uqsInCrmMapped);
+                }
             }
             nextPagePlaces = placesMapped.getNextPageToken();
         }
