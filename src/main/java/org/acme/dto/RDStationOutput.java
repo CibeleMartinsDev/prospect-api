@@ -4,7 +4,7 @@ import java.util.List;
 
 public class RDStationOutput {
 
-    private boolean hasMore;
+    private boolean has_more;
     private List<Organization> organizations;
     private int total;
 
@@ -13,12 +13,12 @@ public class RDStationOutput {
     }
 
     // Getters and Setters
-    public boolean isHasMore() {
-        return hasMore;
+    public boolean ishas_more() {
+        return has_more;
     }
 
-    public void setHasMore(boolean hasMore) {
-        this.hasMore = hasMore;
+    public void sethas_more(boolean has_more) {
+        this.has_more = has_more;
     }
 
     public List<Organization> getOrganizations() {

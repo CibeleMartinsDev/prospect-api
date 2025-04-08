@@ -17,7 +17,7 @@ public class ProspectResource {
     @GET
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getUQs(@QueryParam("searchValue") String searchValue) throws JsonProcessingException {
+    public Response getUQs(@QueryParam("searchValue") String searchValue) throws Exception {
         return Response.ok(prospectService.getUQs(searchValue)).build();
     }
 
